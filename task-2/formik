@@ -1,0 +1,10 @@
+const [loadingComplete, setLoadingComplete] = useState(false);
+
+const handleComplete = () => {
+  setLoadingComplete(true);
+
+  setTimeout(() => {
+    setLoadingComplete(false);
+    alert("Form Completed ✅");
+  }, 3000);
+};
